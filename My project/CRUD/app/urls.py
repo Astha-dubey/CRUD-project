@@ -3,4 +3,7 @@ from app import views
 urlpatterns = [
     path('',views.index,name="index"),
     path('about',views.about,name="about"),
+    path('insert',views.insertData,name="insertData"),
+    path('update/<id>',views.updateData,name="insertData"),
+    path('delete/<id>',views.deleteData,name="insertData"),
 ]
